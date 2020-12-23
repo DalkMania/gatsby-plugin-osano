@@ -4,7 +4,7 @@ Easily add Osano script tag to your Gatsby site.
 
 ## Install
 
-TBD
+For now this plugin can only be installed locally. Create a `plugins` directory in your gatsby site root and clone this repo into it.
 
 ## How to use
 
@@ -12,7 +12,7 @@ TBD
 // In your gatsby-config.js
 plugins: [
   {
-    resolve: `gatsby-plugin-osano`,
+    resolve: require.resolve(`./plugins/gatsby-plugin-osano`),
     options: {
       customerId: 'YOUR_OSANO_CUSTOMER_ID',
       ccid: 'YOUR_OSANO_CUSTOMER_CCID',

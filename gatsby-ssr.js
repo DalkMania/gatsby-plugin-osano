@@ -1,16 +1,16 @@
 import React from "react"
 
 // Ensure that the Osano script gets loaded as early as it can. To comply with GDPR Rules
-export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
+export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }, pluginOptions) => {
   if (
     process.env.NODE_ENV === `production` ||
     pluginOptions.includeInDevelopment
   ) {
     const headComponents = getHeadComponents()
     headComponents.sort((x, y) => {
-      if (x.key === 'gatsby-plugin-osano') {
+      if (x.type === 'script' && x.key === 'gatsby-plugin-osano') {
         return -1
-      } else if (y.key === 'gatsby-plugin-osano') {
+      } else if (y.type === 'script' && y.key === 'gatsby-plugin-osano') {
         return 1
       }
       return 0
