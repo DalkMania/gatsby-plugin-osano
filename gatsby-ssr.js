@@ -8,9 +8,9 @@ export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }, pl
   ) {
     const headComponents = getHeadComponents()
     headComponents.sort((x, y) => {
-      if (x.type === 'script' && x.key === 'gatsby-plugin-osano') {
+      if (y.type === 'script' && x.key === 'gatsby-plugin-osano') {
         return -1
-      } else if (y.type === 'script' && y.key === 'gatsby-plugin-osano') {
+      } else if (x.type === 'script' && y.key === 'gatsby-plugin-osano') {
         return 1
       }
       return 0

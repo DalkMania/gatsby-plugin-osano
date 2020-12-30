@@ -21,3 +21,5 @@ plugins: [
   },
 ];
 ```
+
+If you want osano to be loaded first. Please put code above last in the plugins array.
