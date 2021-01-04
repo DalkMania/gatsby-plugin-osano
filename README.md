@@ -4,7 +4,17 @@ Easily add Osano script tag to your Gatsby site.
 
 ## Install
 
-For now this plugin can only be installed locally. Create a `plugins` directory in your gatsby site root and clone this repo into it.
+Using NPM
+
+```
+npm install --save gatsby-plugin-osano
+```
+
+Using Yarn
+
+```
+yarn add gatsby-plugin-osano
+```
 
 ## How to use
 
@@ -12,7 +22,7 @@ For now this plugin can only be installed locally. Create a `plugins` directory 
 // In your gatsby-config.js
 plugins: [
   {
-    resolve: require.resolve(`./plugins/gatsby-plugin-osano`),
+    resolve: `gatsby-plugin-osano`,
     options: {
       customerId: 'YOUR_OSANO_CUSTOMER_ID',
       ccid: 'YOUR_OSANO_CUSTOMER_CCID',
@@ -22,4 +32,4 @@ plugins: [
 ];
 ```
 
-If you want osano to be loaded first. Please put code above last in the plugins array.
+If you want to ensure that osano is loaded first of the script tags. Please put code above last in the plugins array.
