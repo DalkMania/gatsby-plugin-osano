@@ -14,7 +14,7 @@
     "osano"
   ],
   "author": "Niklas Dahlqvist <dalkmania@gmail.com>",
-  "license": "MIT",
+  "license": "0BSD",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
