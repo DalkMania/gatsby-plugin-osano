@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gatsby-plugin-osano onPreRenderHTML in development mode it does replace head components, if the includeInDevelopment option is true and reorders the osano script to be first 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`gatsby-plugin-osano onPreRenderHTML in production mode it does replace head components, in production and reorders the osano script to be first 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`gatsby-plugin-osano onRenderBody in development mode does set head component, if the includeInDevelopment option is true 1`] = `
+Array [
+  Array [
+    Array [
+      <script
+        src="https://cmp.osano.com/1/1/osano.js"
+      />,
+    ],
+  ],
+]
+`;
+
+exports[`gatsby-plugin-osano onRenderBody in production mode does set head component 1`] = `
+Array [
+  Array [
+    Array [
+      <script
+        src="https://cmp.osano.com/1/1/osano.js"
+      />,
+    ],
+  ],
+]
+`;
