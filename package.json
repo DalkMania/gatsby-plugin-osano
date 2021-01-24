@@ -1,11 +1,11 @@
 {
   "name": "gatsby-plugin-osano",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple Gatsby plugin, adding the Osano JavaScript tag to gatsby",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/ --out-dir . --ignore __tests__",
-    "watch": "babel -w src/ --out-dir . --ignore __tests__",
+    "build": "babel src/ --out-dir . --ignore src/__tests__",
+    "watch": "babel -w src/ --out-dir . --ignore src/__tests__",
     "test": "jest"
   },
   "repository": {

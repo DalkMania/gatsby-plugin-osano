@@ -16,7 +16,13 @@ exports[`gatsby-plugin-osano onRenderBody in development mode does set head comp
 Array [
   Array [
     Array [
+      <link
+        as="script"
+        href="https://cmp.osano.com/1/1/osano.js"
+        rel="preload"
+      />,
       <script
+        async={true}
         src="https://cmp.osano.com/1/1/osano.js"
       />,
     ],
@@ -28,7 +34,13 @@ exports[`gatsby-plugin-osano onRenderBody in production mode does set head compo
 Array [
   Array [
     Array [
+      <link
+        as="script"
+        href="https://cmp.osano.com/1/1/osano.js"
+        rel="preload"
+      />,
       <script
+        async={true}
         src="https://cmp.osano.com/1/1/osano.js"
       />,
     ],
