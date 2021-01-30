@@ -22,7 +22,6 @@ Array [
         rel="preload"
       />,
       <script
-        async={true}
         src="https://cmp.osano.com/1/1/osano.js"
       />,
     ],
@@ -40,7 +39,6 @@ Array [
         rel="preload"
       />,
       <script
-        async={true}
         src="https://cmp.osano.com/1/1/osano.js"
       />,
     ],
