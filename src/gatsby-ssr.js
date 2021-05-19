@@ -4,7 +4,7 @@ import React from "react";
 export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }, pluginOptions) => {
     if (process.env.NODE_ENV === `production` || pluginOptions.includeInDevelopment) {
         let headComponents = getHeadComponents();
-        let scripts = headComponents.filter((el) => el.type === "script");
+        let scripts = headComponents.filter((el) => el && el.type === "script");
         const osano = scripts.find((el) => el.key === "gatsby-plugin-osano");
         scripts = scripts.filter((el) => el !== osano);
         headComponents = headComponents.filter((el) => el.type !== "script");
