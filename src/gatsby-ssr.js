@@ -7,7 +7,7 @@ export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }, pl
         let scripts = headComponents.filter((el) => el && el.type === "script");
         const osano = scripts.find((el) => el.key === "gatsby-plugin-osano");
         scripts = scripts.filter((el) => el !== osano);
-        headComponents = headComponents.filter((el) => el.type !== "script");
+        headComponents = headComponents.filter((el) => el && el.type !== "script");
         scripts.unshift(osano);
         headComponents = headComponents.concat(scripts);
 
