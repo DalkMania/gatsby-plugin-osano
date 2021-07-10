@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-osano",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple Gatsby plugin, adding the Osano JavaScript tag to Gatsby",
   "main": "index.js",
   "scripts": {
